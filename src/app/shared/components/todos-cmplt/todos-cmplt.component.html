@@ -2,7 +2,7 @@
 <h2 class="bg-primary p-2 text-center">Todos Completed By using Api</h2>
 
 <ul class="list-group">
-    <li class="list-group-item" *ngFor="let t of todos">
+    <li class="list-group-item" *ngFor="let t of todos; trackBy : trackById">
         {{t.title}}
         <strong>
             {{t.completed}}

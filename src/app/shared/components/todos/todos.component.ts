@@ -21,4 +21,8 @@ export class TodosComponent implements OnInit {
     })
   }
 
+   trackById(index : number,todo : Itodo){
+    return todo.id
+  }
+
 }

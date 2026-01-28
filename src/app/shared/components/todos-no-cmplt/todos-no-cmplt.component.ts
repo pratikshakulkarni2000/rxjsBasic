@@ -20,4 +20,8 @@ export class TodosNoCmpltComponent implements OnInit {
     this.todoNCmplteObs$ =   this._todoService.getNotCmpltedTodo()
   }
 
+  trackById(index : number,todo : Itodo){
+    return todo.id
+  }
+
 }

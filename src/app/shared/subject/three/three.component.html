@@ -1,5 +1,9 @@
 
 
-<p class="alert alert-info" *ngIf="username">
+<p class="alert alert-info" *ngIf="username; else noUsername">
     the username is {{username}}
 </p>
+
+<ng-template #noUsername>
+   <p class="alert alert-info"> No username here !!!</p>
+</ng-template>
