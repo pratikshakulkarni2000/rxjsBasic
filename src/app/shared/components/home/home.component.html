@@ -1,0 +1,42 @@
+<h2 class="bg-dark text-center text-white p-2">Even Numbers</h2>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let even of evenNo">
+        <strong>
+            {{even}}
+        </strong>
+    </li>
+</ul>
+
+<hr>
+
+<h2 class="bg-warning text-center text-white p-2">Odd Numbers</h2>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let odd of oddNo">
+        <strong>
+            {{odd}}
+        </strong>
+    </li>
+</ul>
+
+<hr>
+<h2 class="bg-secondary text-center text-white p-2"> Numbers</h2>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let n of num">
+        <strong>
+            {{n}}
+        </strong>
+    </li>
+</ul>
+
+<h2 class="bg-success text-center text-white p-2">Divisible by 3</h2>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let d of div3">
+        <strong>
+            {{d}}
+        </strong>
+    </li>
+</ul>

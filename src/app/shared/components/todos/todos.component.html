@@ -1,0 +1,10 @@
+<h2 class="bg-secondary p-2 text-center">Todos By Using Api</h2>
+
+<ul class="list-group">
+    <li *ngFor="let todo of todosArr" class="list-group-item">
+        <strong>
+            {{todo.title}}
+        </strong>
+        {{todo.completed}}
+    </li>
+</ul>

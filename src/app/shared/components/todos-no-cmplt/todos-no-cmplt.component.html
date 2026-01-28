@@ -1,0 +1,11 @@
+
+<h2 class="bg-success p-2 text-center">Not Complted Todos By using Api</h2>
+
+<ul class="list-group" *ngIf="todoNCmplteObs$ | async as todosArr">
+    <li class="list-group-item" *ngFor="let todo of todosArr">
+        {{todo.title}}
+        <strong>
+            {{todo.completed}}
+        </strong>
+    </li>
+</ul>
